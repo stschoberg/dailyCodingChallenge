@@ -10,7 +10,6 @@
 #  1 for exists 0 for not. For each number in the
 #  list, check to see if the complement (to reach k)
 #  has been previously logged. O(n) time, O(k) space
-
 def sumList(lst, k):
     checkList = [-1] * (k + 1)
     print(checkList)
@@ -20,6 +19,7 @@ def sumList(lst, k):
         else:
             checkList[num] = 1
     return False
+
 
 def main():
     k = 17
